@@ -7,6 +7,7 @@ const config = {
   siteTitle: 'Ba Thien Thu Nguyen | My Portfolio',
   linkedin: 'https://www.linkedin.com/in/your-profile',
   email: 'thaliaincanada@gmail.com',
+  cv: 'https://cv',
 };
 
 // File paths
@@ -31,6 +32,7 @@ gulp.task('html', function () {
     .pipe(replace('__SITE_TITLE__', config.siteTitle))
     .pipe(replace('__LINKEDIN__', config.linkedin))
     .pipe(replace('__EMAIL__', config.email))
+    .pipe(replace('__CV__', config.cv))
     .pipe(gulp.dest(paths.dist))
     .pipe(browserSync.stream());
 });
