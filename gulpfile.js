@@ -1,6 +1,13 @@
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
+const replace = require('gulp-replace');
 const browserSync = require('browser-sync').create();
+
+const config = {
+  siteTitle: 'Ba Thien Thu Nguyen | My Portfolio',
+  linkedin: 'https://www.linkedin.com/in/your-profile',
+  email: 'thaliaincanada@gmail.com',
+};
 
 // File paths
 const paths = {
@@ -21,6 +28,9 @@ gulp.task('html', function () {
         basepath: '@file',
       })
     )
+    .pipe(replace('__SITE_TITLE__', config.siteTitle))
+    .pipe(replace('__LINKEDIN__', config.linkedin))
+    .pipe(replace('__EMAIL__', config.email))
     .pipe(gulp.dest(paths.dist))
     .pipe(browserSync.stream());
 });
