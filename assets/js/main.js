@@ -148,9 +148,15 @@
             el: '.tmp-swiper-pagination',
             clickable: true,
           },
+          navigation: {
+            enabled: true,
+            nextEl: '.tmp-swiper-next',
+            prevEl: '.tmp-swiper-prev',
+          },
           autoplay: {
-            delay: 20000,
+            delay: 3000,
             disableOnInteraction: true,
+            pauseOnMouseEnter: true,
           },
           breakpoints: {
             0: {
