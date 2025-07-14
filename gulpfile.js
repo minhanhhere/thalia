@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 
 const config = {
   siteTitle: 'Ba Thien Thu Nguyen | My Portfolio',
-  linkedin: 'https://www.linkedin.com/in/your-profile',
+  linkedin: 'https://www.linkedin.com/in/msthunguyen',
   email: 'thaliaincanada@gmail.com',
   cv: 'https://cv',
 };
