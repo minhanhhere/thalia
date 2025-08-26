@@ -7,7 +7,7 @@ const config = {
   siteTitle: 'Ba Thien Thu Nguyen | My Portfolio',
   linkedin: 'https://www.linkedin.com/in/msthunguyen',
   email: 'thaliaincanada@gmail.com',
-  cv: '/assets/cv.pdf',
+  cv: '/assets/cv-thalia-nguyen.pdf',
 };
 
 // File paths
